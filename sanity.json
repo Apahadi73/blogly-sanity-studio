@@ -1,0 +1,31 @@
+{
+  "root": true,
+  "project": {
+    "name": "amir-blog"
+  },
+  "api": {
+    "projectId": "pw0na0e8",
+    "dataset": "amir-blog-db"
+  },
+  "plugins": [
+    "@sanity/base",
+    "@sanity/components",
+    "@sanity/default-layout",
+    "@sanity/default-login",
+    "@sanity/desk-tool",
+    "@sanity/code-input"
+  ],
+  "env": {
+    "development": {
+      "plugins": [
+        "@sanity/vision"
+      ]
+    }
+  },
+  "parts": [
+    {
+      "name": "part:@sanity/base/schema",
+      "path": "./schemas/schema"
+    }
+  ]
+}
